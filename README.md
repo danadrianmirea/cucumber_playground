@@ -96,5 +96,3 @@ If you prefer more verbose Maven output while diagnosing issues, remove `-q` or 
 - If you want reproducible developer environments, consider adding a Dockerfile or a `devcontainer.json`.
 
 ---
-
-Happy testing! If you want, I can add a Dockerfile or CI config to run these tests automatically.
