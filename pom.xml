@@ -33,7 +33,15 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JUnit -->
+        <!-- JUnit Jupiter (JUnit 5) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit Vintage (for running JUnit 4 tests like Cucumber runner) -->
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
@@ -52,6 +60,7 @@
                     <configuration>
                         <includes>
                             <include>**/RunCucumberTest.java</include>
+                            <include>**/*Test.java</include>
                         </includes>
                     </configuration>
                 </plugin>
